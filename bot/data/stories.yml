@@ -98,3 +98,64 @@ stories:
     entities:
       - acao
   - action: action_exemplo
+
+  #Stories do meu bot
+- story: glicemia de jejum
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - action: utter_continuar_conversa
+  - intent: gli_jejum
+  - action: utter_continuar_conversa
+  - action: utter_gli_jejum
+  - action: utter_continuar_conversa
+  - intent: glicemia-de-jejum
+  - action: utter_continuar_conversa
+  - action: utter_glicemia-de-jejum
+  - action: utter_continuar_conversa
+  - intent: despedir
+  - action: utter_despedir
+
+- story: glicemia pós grandial
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: gli_posgrandial
+  - action: utter_gli_posgrandial
+  - intent: glicose-pos_prandial-jejum
+  - action: utter_glicose-pos_prandial-jejum
+  - intent: glicose-pos_prandial-refeicao
+  - action: utter_glicose-pos_prandial-refeicao
+  - intent: glicose-pos_prandial-remedio
+  - action: utter_glicose-pos_prandial-remedio
+  - intent: glicose-pos_prandial-atraso
+  - action: utter_glicose-pos_prandial-atraso
+  
+
+  
+- story: glicose urina 24 horas
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: gli_urina24h
+  - action: utter_gli_urina24h
+  - intent: glicose-urina_24h-jejum
+  - action: utter_glicose-urina_24h-jejum
+  - intent: glicose-urina_24h-armazenamento
+  - action: utter_glicose-urina_24h-armazenamento
+  - intent: glicose-urina_24h-beber
+  - action: utter_glicose-urina_24h-beber
+  - intent: glicose-urina_24h-agua
+  - action: utter_glicose-urina_24h-agua
+  - intent: glicose-urina_24h-menstrual 
+  - action: utter_glicose-urina_24h-menstrual 
+ 
+
+- story: glicose urina recente
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: gli_urinarecente
+  - action: utter_gli_urinarecente 
+  - intent: glicose-urina_recente-coleta
+  - action: utter_glicose-urina_recente-coleta

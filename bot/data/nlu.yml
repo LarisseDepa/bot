@@ -348,3 +348,119 @@ nlu:
     - Exemplo de [ação](acao)
     - Me explique como funciona uma [custom action](acao) no rasa.
     - Você sabe fazer [ações customizadas](acao)?
+#Intents do meu bot
+- intent: gli_jejum
+ examples: |
+    - Qual exame precisa de jejum para fazer exame de glicemia?
+    - Qual exame detecta glicemia de jejum?
+    - glicemia de jejum
+    - glicemia
+
+- intent: gli_posgrandial
+  examples: |
+    - Qual exame de glicemia faz depois da refeição?
+    - glicemia depois da refeição
+    - glicemia depois de comer
+    - exame glicose depois de comer
+    - glicose pos prandial
+
+
+- intent: gli_urina24h
+  examples: |
+    - exame de urina 24 horas
+    - exame de urina 24h
+    - exame xixi 24h
+    - glicose urina 24h
+  
+
+- intent: gli_urinarecente
+  examples: |
+    - exame urina manhã
+    - exame urina primeiro jato
+    - glicose urina recente
+
+- intent: glicose-pos_prandial-jejum
+  examples: |
+    - Preciso fazer jejum para exame de glicose pós prandial?
+    - quantas horas de jejum para exame de glicemia pós prandial?
+    - quantas horas de jejum para exame de glicemia?
+    - Exame de glicemia pós grandial precisa de jejum?
+    - jejum para exame de glicemia pós prandial
+    - glicemia pos prandial jejum
+    - exame glicemia pos prandial jejum
+     
+- intent: glicose-pos_prandial-refeicao
+  examples: |
+    - quantas horas após a refeição é feito o exame?
+    - glicemia pos prandial refeição
+    - quanto tempo depois de comer é feito o exame?
+    - quanto tempo após a refeição é realizado o exame?
+
+
+- intent: glicose-pos_prandial-remedio
+  examples: |
+    - devo parar de tomar o remédio de diabetes para fazer o exame de glicemia?
+    - medicamento diabetes para fazer exame de glicose pos prandial.
+    - devo usar o medicamento de diabetes para realizar o exame.
+
+- intent: glicose-pos_prandial-atraso
+  examples: |
+    - quanto tempo posso atrasar para o exame?
+    - quanto tempo para o exame
+    - quantas horas posso atrasar para fazer o exame de glicose pós prandial?
+
+- intent: glicemia-de-jejum
+  examples: |
+    - Preciso fazer jejum para exame de glicemia?
+    - quantas horas de jejum para exame de glicemia?
+    - quantas horas de jejum para exame de glicose de jejum?
+    - Exame de glicemia precisa de jejum?
+    - jejum para exame de glicemia 
+    - posso comer quando vou fazer exame de glicemia?
+    - Com quantos anos precisa fazer jejum para o exame de glicemia?
+    - Criança precisa fazer jejum para fazer exame de glicemia ?
+    - Quantas horas preciso ficar em jejum para o exame de glicemia?
+    - Quantos anos a criança precisa ficar em jejum para o exame de glicemia?
+
+- intent: glicose-urina_24h-jejum
+  examples: |
+    - preciso fazer jejum para exame de urina 24 horas?
+    - jejum para exame de glicose urina 24 horas? 
+    - posso comer quando vou fazer exame de glicose urina 24 horas?
+
+- intent: glicose-urina_24h-armazenamento
+  examples: |
+    - precisa colocar na geladeira urina 24 horas?
+    - exame de urina 24 horas pode guardar na geladeira?
+    - exame urina 24 horas pode ficar fora da geladeira
+    - exame de urina 24 horas qual pote para colher
+    - exame de urina 24 horas pode usar garrafa pet
+    - como coletar urina de 24 horas
+    - frasco coletor urina 24 horas
+    - como colher a urina de 24 horas?
+
+- intent: glicose-urina_24h-beber
+  examples: |
+     - exame de urina 24 horas pode tomar cerveja
+     - posso beber para fazer exame de urina 24h?
+    
+- intent: glicose-urina_24h-agua
+  examples: |
+     - preciso beber mais água para fazer exame de urina 24 horas?
+
+- intent: glicose-urina_24h-menstrual
+   examples: |
+     - pode fazer menstruada exame de urina 24 horas?
+
+- intent: glicose-urina_recente-coleta
+  examples: |
+    - qual xixi devo fazer para o exame?
+    - quanto tempo para fazer cada xixi? 
+    - como devo coletar a urina para glicose?
+    - onde posso coletar minha urina?
+    - qual intervalo para urina de primeiro jato?
+    - primeiro jato urina
+    - como devo fazer o exame de urina?
+    - coleta exame de urina
+    - como colher exame de urina ?
+ 
