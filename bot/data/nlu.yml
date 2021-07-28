@@ -350,7 +350,7 @@ nlu:
     - Você sabe fazer [ações customizadas](acao)?
 #Intents do meu bot
 - intent: gli_jejum
- examples: |
+  examples: |
     - Qual exame precisa de jejum para fazer exame de glicemia?
     - Qual exame detecta glicemia de jejum?
     - glicemia de jejum
@@ -388,7 +388,7 @@ nlu:
     - jejum para exame de glicemia pós prandial
     - glicemia pos prandial jejum
     - exame glicemia pos prandial jejum
-     
+
 - intent: glicose-pos_prandial-refeicao
   examples: |
     - quantas horas após a refeição é feito o exame?
@@ -412,7 +412,6 @@ nlu:
 - intent: glicemia-de-jejum
   examples: |
     - Preciso fazer jejum para exame de glicemia?
-    - quantas horas de jejum para exame de glicemia?
     - quantas horas de jejum para exame de glicose de jejum?
     - Exame de glicemia precisa de jejum?
     - jejum para exame de glicemia 
@@ -449,7 +448,7 @@ nlu:
      - preciso beber mais água para fazer exame de urina 24 horas?
 
 - intent: glicose-urina_24h-menstrual
-   examples: |
+  examples: |
      - pode fazer menstruada exame de urina 24 horas?
 
 - intent: glicose-urina_recente-coleta
