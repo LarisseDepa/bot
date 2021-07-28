@@ -29,6 +29,22 @@ intents:
   - informar
   - pede_exemplo_acao
   - pede_exemplo_form
+  #meu bot
+  - gli_jejum
+  - glicemia-de-jejum
+  - gli_posgrandial
+  - glicose-pos_prandial-jejum
+  - glicose-pos_prandial-refeicao
+  - glicose-pos_prandial-remedio
+  - glicose-pos_prandial-atraso
+  - gli_urina24h
+  - glicose-urina_24h-jejum
+  - glicose-urina_24h-armazenamento
+  - glicose-urina_24h-beber
+  - glicose-urina_24h-agua
+  - glicose-urina_24h-menstrual
+  - gli_urinarecente
+  - glicose-urina_recente-coleta
 entities:
   - oi
   - menu
@@ -50,21 +66,21 @@ entities:
   - nome
   - idade
   #meu bot
-- gli_jejum
-- gli_posgrandial
-- gli_urina24h
-- gli_urinarecente
-- glicose-pos_prandial-jejum
-- glicose-pos_prandial-refeicao
-- glicose-pos_prandial-remedio
-- glicose-pos_prandial-atraso
-- glicemia-de-jejum
-- glicose-urina_24h-jejum
-- glicose-urina_24h-armazenamento
-- glicose-urina_24h-beber
-- glicose-urina_24h-agua
-- glicose-urina_24h-menstrual
-- glicose-urina_recente-coleta
+  - gli_jejum
+  - gli_posgrandial
+  - gli_urina24h
+  - gli_urinarecente
+  - glicose-pos_prandial-jejum
+  - glicose-pos_prandial-refeicao
+  - glicose-pos_prandial-remedio
+  - glicose-pos_prandial-atraso
+  - glicemia-de-jejum
+  - glicose-urina_24h-jejum
+  - glicose-urina_24h-armazenamento
+  - glicose-urina_24h-beber
+  - glicose-urina_24h-agua
+  - glicose-urina_24h-menstrual
+  - glicose-urina_recente-coleta
 slots:
   nome:
     type: text
@@ -288,6 +304,78 @@ responses:
   - text: "Agora você entrou em uma story que ativou um formulário! Aqui tem a documentação do Rasa sobre formulários: [documentação](https://rasa.com/docs/rasa/forms/). \n Vou te fazer algumas perguntas, responda elas pra mim pra que você possa sair deste loop."
   utter_slots_exemplo_form:
   - text: "No formulário eu preenchi o slot NOME com o seguinte valor: {nome}"
+#meu bot
+  utter_gli_jejum:
+  - text: |
+      Olá, gostaria de falar sobre o exame chamado glicemia ou glicemia de jejum?
+      Você pode perguntar qual a dúvida sobre esse exame?
+  - text: |
+      Acho que te entendi, você pode me perguntar sobre as recomendações ou instruções para o exame de glicemia de jejum ou glicemia.
+  utter_gli_posgrandial:
+  - text: |
+      Olá, gostaria de falar sobre o exame chamado glicose pos grandial?
+      Você pode perguntar qual a dúvida sobre esse exame?
+  - text: |
+      Acho que te entendi, você pode me perguntar sobre as recomendações ou instruções para o exame de glicose pos grandial.
+  utter_gli_urina24h:
+  - text: |
+      Olá, gostaria de falar sobre o exame chamado glicose urina 24h?
+      Você pode perguntar qual a dúvida sobre esse exame?
+  - text: |
+      Acho que te entendi, você pode me perguntar sobre as recomendações ou instruções para o exame de glicose urina 24h.
+  utter_gli_urinarecente:
+  - text: |
+      Olá, gostaria de falar sobre o exame chamado glicose urina recente?
+      Você pode perguntar qual a dúvida sobre esse exame?
+  - text: |
+      Acho que te entendi, você pode me perguntar sobre as recomendações ou instruções para o exame de glicose urina recente.
+  utter_glicose-pos_prandial-jejum:
+  - text: |
+        Não é necessário fazer jejum. A amostra precisa ser colhida duas horas após o início da refeição (almoço) ou conforme solicitação médica. No primeiro caso, o tempo deve ser cronometrado a partir do começo da refeição.Evite bebidas alcoólicas, café, refrigerantes, após terminar a refeição (almoço).
+  utter_glicose-pos_prandial-refeicao:
+  - text: |
+        A coleta é realizada  duas horas após o início da refeição (almoço) ou conforme solicitação médica.Quando completar 2 horas avise ao laboratório para realizar o exame.
+  
+  - text: |
+        São duas horas após o almoço (início da refeição) ou conforme solicitação médica. Quando completar 2 horas avise ao laboratório para realizar o exame.
+  utter_glicose-pos_prandial-remedio:
+  - text: |
+        O uso de medicamentos para diabetes não deve ser suspenso, a não ser que exista informação contrária do médico(a) assistente.
+  
+  utter_glicose-pos_prandial-atraso:
+  - text: |
+        É importante que o horário de coleta seja respeitado. A tolerância de atraso será de, no máximo, 15 minutos, depois dos quais não há mais possibilidade de realizar o exame.
+  utter_glicemia-de-jejum:
+  - text: |
+       Este exame requer um jejum de oito horas (com exceção de água, que pode ser ingerida);
+       Crianças de 3 a 9 anos de idade jejum mínimo necessário de 04 horas;
+       Acima de 09 anos de idade, jejum mínimo necessário de 8 horas
+  utter_glicose-urina_24h-jejum:
+  - text: |
+      Não é necessário fazer jejum para o exame de urina 24 horas, exceto sob orientação médica.
+      O paciente deve manter sua rotina diária.
+  utter_glicose-urina_24h-beber:
+  - text: |
+      O ideal seria evitar beber cerveja ou outras bebida alcoólicas antes e durante a realização do exame.
+  utter_glicose-urina_24h-agua:
+  - text: |
+     Não é preciso aumentar a ingestão de líquidos, exceto sob orientação médica.
+  utter_glicose-urina_24h-menstrual:
+  - text: |
+     Preferencialmente o exame deve ser realizado fora do período menstrual. Caso seja urgente, procure orientação do laboratório onde irá realizar o exame.
+  utter_glicose-urina_recente-coleta:
+  - text: |
+     Colher preferencialmente no laboratório a 1ª urina da manhã ou com intervalo de 4 horas entre as micções.
+     Fazer higiene local com água e sabão, secar, desprezar o 1º jato e coletar o jato do meio.
+     Utilizar frasco limpo e próprio para coleta de urina.
+  utter_glicose-urina_24h-armazenamento:
+  - text: |
+     O paciente deve retirar os frascos  adequados para coleta do material fornecido pelo laboratório.
+     No dia da coleta, quando for fazer a primeira urina do dia, o paciente deverá desprezar toda a urina contida na bexiga e anotar o horário.
+     A partir desse momento, durante o resto do dia e à noite, a urina deve ser totalmente coletada e refrigerada toda vez que urinar, e também deve ser colocada no mesmo frasco coletor. Deve ser hermético (bem fechado) e armazenado na geladeira ou refrigerado, entre cada micção.
+     Coletar a primeira urina do dia seguinte na mesma hora em que desprezou a urina do dia anterior
+     Sim. Mantenha o material na geladeira durante a coleta até a entrega no laboratório.
+     Usar somente garrafa pet de água mineral ou o coletor fornecido pelo laboratório.
 actions:
 - action_exemplo
 forms:
@@ -300,77 +388,3 @@ forms:
     - type: from_entity
       entity: idade
       intent: informar
-#meu bot
-utter_gli_jejum:
-  - text: |
-      Olá, gostaria de falar sobre o exame chamado glicemia ou glicemia de jejum?
-      Você pode perguntar qual a dúvida sobre esse exame?
-  - text: |
-      Acho que te entendi, você pode me perguntar sobre as recomendações ou instruções para o exame de glicemia de jejum ou glicemia.
- utter_gli_posgrandial:
-  - text: |
-      Olá, gostaria de falar sobre o exame chamado glicose pos grandial?
-      Você pode perguntar qual a dúvida sobre esse exame?
-  - text: |
-      Acho que te entendi, você pode me perguntar sobre as recomendações ou instruções para o exame de glicose pos grandial.
- utter_gli_urina24h:
-  - text: |
-      Olá, gostaria de falar sobre o exame chamado glicose urina 24h?
-      Você pode perguntar qual a dúvida sobre esse exame?
-  - text: |
-      Acho que te entendi, você pode me perguntar sobre as recomendações ou instruções para o exame de glicose urina 24h.
- utter_gli_urinarecente:
-  - text: |
-      Olá, gostaria de falar sobre o exame chamado glicose urina recente?
-      Você pode perguntar qual a dúvida sobre esse exame?
-  - text: |
-      Acho que te entendi, você pode me perguntar sobre as recomendações ou instruções para o exame de glicose urina recente.
-utter_glicose-pos_prandial-jejum:
-  - text: |
-      Não é necessário fazer jejum. A amostra precisa ser colhida duas horas após o início da refeição (almoço) ou conforme solicitação médica. No primeiro caso, o tempo deve ser cronometrado a partir do começo da refeição.Evite bebidas alcoólicas, café, refrigerantes, após terminar a refeição (almoço).
-utter_glicose-pos_prandial-refeicao:
-  - text: |
-      A coleta é realizada  duas horas após o início da refeição (almoço) ou conforme solicitação médica.Quando completar 2 horas avise ao laboratório para realizar o exame.
-
-  - text: |
-      São duas horas após o almoço (início da refeição) ou conforme solicitação médica. Quando completar 2 horas avise ao laboratório para realizar o exame.
-utter_glicose-pos_prandial-remedio:
-  - text: |
-      O uso de medicamentos para diabetes não deve ser suspenso, a não ser que exista informação contrária do médico(a) assistente.
-
-utter_glicose-pos_prandial-atraso:
-  - text: |
-      É importante que o horário de coleta seja respeitado. A tolerância de atraso será de, no máximo, 15 minutos, depois dos quais não há mais possibilidade de realizar o exame.
-utter_glicemia-de-jejum:
-  - text: |
-     Este exame requer um jejum de oito horas (com exceção de água, que pode ser ingerida);
-     Crianças de 3 a 9 anos de idade jejum mínimo necessário de 04 horas;
-     Acima de 09 anos de idade, jejum mínimo necessário de 8 horas
-utter_glicose-urina_24h-jejum:
-  - text: |
-    Não é necessário fazer jejum para o exame de urina 24 horas, exceto sob orientação médica.
-    O paciente deve manter sua rotina diária.
-utter_glicose-urina_24h-armazenamento:
-  - text: |
-    O paciente deve retirar os frascos  adequados para coleta do material fornecido pelo laboratório.
-No dia da coleta, quando for fazer a primeira urina do dia, o paciente deverá desprezar toda a urina contida na bexiga e anotar o horário.
-A partir desse momento, durante o resto do dia e à noite, a urina deve ser totalmente coletada e refrigerada toda vez que urinar, e também deve ser colocada no mesmo frasco coletor. Deve ser hermético (bem fechado) e armazenado na geladeira ou refrigerado, entre cada micção.
-Coletar a primeira urina do dia seguinte na mesma hora em que desprezou a urina do dia anterior
-
-Sim. Mantenha o material na geladeira durante a coleta até a entrega no laboratório.
-
-Usar somente garrafa pet de água mineral ou o coletor fornecido pelo laboratório.
-utter_glicose-urina_24h-beber:
-  - text: |
-    O ideal seria evitar beber cerveja ou outras bebida alcoólicas antes e durante a realização do exame.
-utter_glicose-urina_24h-agua:
-  - text: |
-   Não é preciso aumentar a ingestão de líquidos, exceto sob orientação médica.
-utter_glicose-urina_24h-menstrual:
-  - text: |
-   Preferencialmente o exame deve ser realizado fora do período menstrual. Caso seja urgente, procure orientação do laboratório onde irá realizar o exame.
-utter_glicose-urina_recente-coleta:
-  - text: |
-   Colher preferencialmente no laboratório a 1ª urina da manhã ou com intervalo de 4 horas entre as micções.
-   Fazer higiene local com água e sabão, secar, desprezar o 1º jato e coletar o jato do meio.
-   Utilizar frasco limpo e próprio para coleta de urina.

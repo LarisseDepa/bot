@@ -104,15 +104,10 @@ stories:
   steps:
   - intent: cumprimentar
   - action: utter_cumprimentar
-  - action: utter_continuar_conversa
   - intent: gli_jejum
-  - action: utter_continuar_conversa
   - action: utter_gli_jejum
-  - action: utter_continuar_conversa
   - intent: glicemia-de-jejum
-  - action: utter_continuar_conversa
   - action: utter_glicemia-de-jejum
-  - action: utter_continuar_conversa
   - intent: despedir
   - action: utter_despedir
 
